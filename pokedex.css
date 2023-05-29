@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    background: url(imagenes/rojo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+    background-attachment: fixed;
+  }
+  
+
+  nav{
+    width: 100%;
+    background: #1550a3;
+    height: 80px;
+  }
+  .enlace{
+    position: absolute;
+    padding: 20px 50px;
+  }
+  .logo{
+    height: 40px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  li a:active, li a:hover{
+    background: #e83939;
+    transition: 0.5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width:952px){
+    .enlace{
+      padding-left: 20px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width:858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    li a:hover,li a:active{
+      background: none;
+      color: #e83939;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  /*Centrar en el medio de la pantalla*/
+  form{
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+  }
+  #buscador{
+    border-radius: 10px;
+    text-align: center;
+    height: 30px;
+    left: 300px;
+    position: absolute;
+  }
+
+
+table{
+  background-color: white;
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+}
+  
+  th, td{
+    padding: 20px;
+  
+  }
+  
+  thead{
+    background-color: #0b73ea;
+    border-bottom: solid 5px #0F362D;
+    color: white;
+  }
+  
+  tr:nth-child(even){
+    background-color: #ddd;
+  }
+  
+  tr:hover td{
+    background-color: #156aa7;
+    color: white;
+  }
+  #tabla{
+    width: 850px;
+    overflow-y: scroll;
+    height: 400px;
+    position : absolute;
+    left: 300px;
+    top: 200px;
+
+  }
+  #imgpok{
+    width: 100px;
+    height: 100px;
+  }
+  #buscar{
+    position: absolute;
+    left: 480px;
+    top: 153px;
+    border-radius: 10px;
+    height: 25px;
+    width: 60px;
+
+  }
+  
+
+  
+
+
+  
